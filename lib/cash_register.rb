@@ -13,6 +13,7 @@ class CashRegister
     while counter < multiplier
       @items << item
       @total += price
+      @prices << price
       counter += 1
     end
   end
@@ -25,5 +26,8 @@ class CashRegister
        "After the discount, the total comes to $#{@total}."
     end
   end
+
+  def void_last_transaction
+    last = @prices
 
 end
