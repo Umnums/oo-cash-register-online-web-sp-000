@@ -20,7 +20,7 @@ class CashRegister
     if @discount == 0
       puts "No discount"
     else
-      @total * (100-@discount)/100
+      @total = @total * (100-@discount)/100
     end
   end
 
