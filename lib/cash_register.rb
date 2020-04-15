@@ -15,6 +15,7 @@ class CashRegister
       @items << item
       @total += price
       @prices << price
+      @multiplier << multiplier
       counter += 1
     end
   end
