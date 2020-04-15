@@ -32,5 +32,7 @@ class CashRegister
     @total -= last
     @prices.pop
     @items.pop
+    @total
+  end
 
 end
