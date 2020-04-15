@@ -6,6 +6,7 @@ class CashRegister
     @discount = discount
     @items = []
     @prices = []
+    @multiplier = []
   end
 
   def add_item(item,price, multiplier = 1)
