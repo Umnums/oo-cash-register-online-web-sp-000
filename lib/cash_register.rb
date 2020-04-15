@@ -8,8 +8,12 @@ class CashRegister
   end
 
   def add_item(item,price, multiplier = 1)
-    @items << item
-    @total += price
+    counter = 0
+    while counter < multiplier
+      @items << item
+      @total += price
+      counter += 1
+    end
   end
 
 end
