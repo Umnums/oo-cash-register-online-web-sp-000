@@ -30,11 +30,15 @@ class CashRegister
   end
 
   def void_last_transaction
-    last = @prices.last
-    @total -= last
-    @prices.pop
-    @items.pop
-    @total
+    counter = 0
+    while counter < @multiplier.last
+      last = @prices.last
+      @total -= last
+      @prices.pop
+      @items.pop
+      @total
+      counter += 1
+    end
   end
 
 end
